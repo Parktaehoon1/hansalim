@@ -1,3 +1,48 @@
+
+// 조합원센터 버튼 클릭시 아래 ul 보여주기
+// let headerTopBtn = document.getElementById('header-top-btn');
+// console.log(headerTopBtn)
+// let headerTopDepth = document.getElementById('header-top-depth2');
+// console.log(headerTopDepth)
+
+// headerTopBtn.addEventListener('click', function(){
+//   if(headerTopDepth.style.display == "none"){
+//     headerTopDepth.style.display = "block"
+//   } else {
+//     headerTopDepth.style.display = "none"
+//   }
+// })
+
+// jQuery toggle 
+$('#header-top-btn').click(function(){
+  $('#header-top-depth2').toggle()
+  // show, hide
+})
+
+let navButton = $('.nav button')
+console.log($('.nav button'))
+let toggleList = $('.toggle-list')
+console.log("toggle-list",toggleList)
+function changeList(showIndex){
+  console.log("showindex",showIndex)// 인덱스가 넘어온다
+  toggleList.hide()
+  if(toggleList.eq(showIndex)){
+    toggleList.eq(showIndex).toggle()
+  } 
+
+
+}
+
+$.each(navButton, function(index){
+  $(this).click(function (){
+    console.log("인덱스",index)
+    
+    showIndex = index;
+    changeList(showIndex) 
+  })
+})
+
+
 // 추천상품 데이터
 var purposeData;
 purposeData = [

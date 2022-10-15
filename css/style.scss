@@ -38,7 +38,7 @@ body {
 .inner {
   position: relative;
   display: block;
-  width: 1260px;
+  width: 1200px;
   margin: 0 auto;
 }
 .clearfix::after {
@@ -160,6 +160,331 @@ body {
 }
 
 // 헤더영역
+.header{
+  position: relative;
+  display: block;
+  .inner{
+    > .header-top{
+      position: relative;
+      display: block;
+      padding: 20px 0 6px 0;  
+     > .header-top-left{
+      position: relative;
+      display: block;
+      float: left;
+      .logo{
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+        width: 191px;
+        height: 31px;
+        background: url('/images/logo.png') no-repeat center;
+        background-size: cover;
+        padding-top: 10px;
+      }
+      .day::before{
+        content: '';
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('/images/icoLocation.png') no-repeat center;
+        background-size: cover;
+      }
+      .day{
+        position: relative;
+        display: inline-block;
+        color: #666666;
+        margin-left: 10px;
+      }
+    }
+      > ul{
+        position: relative;
+        display: flex;
+        float: right;
+        > li:first-child{
+          position: relative;
+          font-size: 0;
+          width: 102px;
+          height: 20px;
+          background: url('/images/icoDlvr.png') no-repeat center;
+          background-size: cover;
+          > a{
+            position: relative;
+            display: block;
+            width: 102px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+        > li:nth-child(3)::before,
+        > li:nth-child(4)::before,
+        > li:nth-child(5)::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 7px;
+          width: 1px;
+          height: 8px;
+          background: #bbb;
+        }
+        li:nth-child(4){
+          position: relative;
+          color: #666;
+          padding-right: 15px;
+          > button{
+            position: relative;
+            border: 0;
+            background-color: transparent;
+            font-size: 13px;
+            line-height: 19px;
+            color: #666;
+            font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+          }
+          button::after{
+            content: "";
+            position: absolute;
+            right: -15px;
+            top: 6px;
+            width: 10px;
+            height: 6px;
+            background: url('/images/icoMyMenu.png') no-repeat right top;
+          }
+          ul{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            z-index: 3;
+            margin-left: 5px;
+            padding: 10px 20px 20px 20px;
+            background: #fff;
+            border: solid 1px #ddd;
+            box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+            transform: translateX(-50%);
+            >li{
+              margin-top: 10px;
+              >a{
+                position: relative;
+                white-space: nowrap;
+                color: #666;
+                font-size: 13px;
+                line-height: 19px;
+              }
+            }
+            >li:hover >a{
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+        }
+        > li{
+          position: relative;
+          display: block;
+          margin-left: 11px;
+          padding-left: 11px;
+          > a{
+            font-size: 13px;
+            line-height: 19px;
+            color: #666;
+          }
+        }
+      }
+    }
+    .header-bottom{
+      position: relative;
+      display: block;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 10px 0;
+      .nav{
+        position: relative;
+        float: left;
+        margin-top: 9px;
+        font-size: 0;
+        .all-menu::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 5px;
+          width: 20px;
+          height: 2px;
+          background: #000;
+        }
+        .all-menu::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 13px;
+          width: 20px;
+          height: 2px;
+          background: #000;
+        }
+        .all-menu{
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 0 16px 35px;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 28px;
+          span::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 21px;
+            width: 20px;
+            height: 2px;
+            background: #000;
+          }
+          span{
+            display: block;
+            line-height: 28px;
+          }
+        }
+        > ul{
+          position: relative;
+          display: inline-block;
+          line-height: 28px;
+          margin-left: 8px;
+          font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+          > li{
+            position: relative;
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 17px;
+            font-weight: 500;
+            > a{
+              position: relative;
+              display: block;
+              font-size: 17px;
+            }
+            >button{
+              font-size: 17px;
+              font-weight: 500;
+              font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+              color: #000;
+              background: transparent;
+              border: none;
+              padding: 0 5px;
+              cursor: pointer;
+            }
+          }
+          li:nth-child(5)::after,
+          li:nth-child(6)::after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 2px;
+            width: 5px;
+            height: 5px;
+            background: #f58320;
+            border-radius: 50%;
+          }
+          li:nth-child(7) > ul{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 43px;
+            padding: 5px 20px;
+            transform: translateX(-50%);
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+            z-index: 99;
+            >li{
+              height: 37px;
+              margin-left: 0;
+              line-height: 37px;
+              white-space: nowrap;
+            }
+          }
+          li:nth-child(8) > ul{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 43px;
+            padding: 5px 20px;
+            transform: translateX(-50%);
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+            z-index: 99;
+            >li{
+              height: 37px;
+              margin-left: 0;
+              line-height: 37px;
+              white-space: nowrap;
+            }
+          }
+          button:nth-child(1)::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 12px;
+            height: 8px;
+            background: url('/images/icoGnbArr2.png') no-repeat center top;            
+          }
+          li:last-child{
+            margin-left: 40px;
+          }
+          button:last-child::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 10px;
+            height: 6px;
+            background: url('/images/icoGnbArr3.png') no-repeat center top;
+          }
+        }
+      }
+      .search-wrap{
+        float: right;
+        line-height: 28px;
+        .search-form{
+          position: relative;
+          display: inline-block;
+          padding: 0 6px 0 19px;
+          border-radius: 20px;
+          background: #f7f7f7;
+          border: 1px solid #f7f7f7;
+          vertical-align: top;
+          input{
+            position: relative;
+            display: inline-block;
+            width: 255px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 40px;
+            background: transparent;
+            border: 0;
+            vertical-align: top;
+          }
+          button{
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url('/images/btnSearch.png') no-repeat center;
+            border: none;
+            vertical-align: top;
+          }
+        }
+        .cart{
+          position: relative;
+          display: inline-block;
+          width: 42px;
+          height: 42px;
+          margin: 0 -3px 0 18px;
+          background: url('/images/btnCart.png') no-repeat center;
+        }
+      }
+    }
+  }
+}
+
 
 // 비주얼영역
 

@@ -377,6 +377,30 @@ body {
   background: #f58320;
   border-radius: 50%;
 }
+.header .inner .header-bottom .nav > ul li:nth-child(7) button {
+  position: relative;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(7) > .active {
+  position: relative;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(7) > .active::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 12px;
+  width: 10px;
+  height: 6px;
+  background: url("/images/icoGnbArr2.png") no-repeat center 90%;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(7) button::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 12px;
+  height: 8px;
+  background: url("/images/icoGnbArr2.png") no-repeat center top;
+}
 .header .inner .header-bottom .nav > ul li:nth-child(7) > ul {
   display: none;
   position: absolute;
@@ -394,6 +418,30 @@ body {
   margin-left: 0;
   line-height: 37px;
   white-space: nowrap;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(8) button {
+  position: relative;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(8) > .active {
+  position: relative;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(8) > .active::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 12px;
+  width: 10px;
+  height: 6px;
+  background: url("/images/icoGnbArr3.png") no-repeat center bottom;
+}
+.header .inner .header-bottom .nav > ul li:nth-child(8) button::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 12px;
+  height: 8px;
+  background: url("/images/icoGnbArr3.png") no-repeat 50% -30%;
 }
 .header .inner .header-bottom .nav > ul li:nth-child(8) > ul {
   display: none;
@@ -413,26 +461,8 @@ body {
   line-height: 37px;
   white-space: nowrap;
 }
-.header .inner .header-bottom .nav > ul button:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 10px;
-  width: 12px;
-  height: 8px;
-  background: url("/images/icoGnbArr2.png") no-repeat center top;
-}
 .header .inner .header-bottom .nav > ul li:last-child {
   margin-left: 40px;
-}
-.header .inner .header-bottom .nav > ul button:last-child::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 12px;
-  width: 10px;
-  height: 6px;
-  background: url("/images/icoGnbArr3.png") no-repeat center top;
 }
 .header .inner .header-bottom .search-wrap {
   float: right;

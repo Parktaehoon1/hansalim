@@ -19,28 +19,43 @@ $('#header-top-btn').click(function(){
   // show, hide
 })
 
-let navButton = $('.nav button')
-console.log($('.nav button'))
-let toggleList = $('.toggle-list')
-console.log("toggle-list",toggleList)
-function changeList(showIndex){
-  console.log("showindex",showIndex)// 인덱스가 넘어온다
-  toggleList.hide()
-  if(toggleList.eq(showIndex)){
-    toggleList.eq(showIndex).toggle()
-  } 
+let attendBtn = $('.attend')
+let moreBtn = $('.more')
+let attendList = $('.attend-list')
+let moreList = $('.more-list')
 
-
-}
-
-$.each(navButton, function(index){
-  $(this).click(function (){
-    console.log("인덱스",index)
-    
-    showIndex = index;
-    changeList(showIndex) 
-  })
+attendBtn.click(function(){
+  attendList.toggle()
+  moreBtn.removeClass('active')
+  attendBtn.toggleClass('active')
+  moreList.hide()
 })
+moreBtn.click(function(){
+  moreList.toggle()
+  attendBtn.removeClass('active')
+  moreBtn.toggleClass('active')
+  attendList.hide()
+})
+
+
+
+// function changeList(showIndex){
+//   console.log(showIndex)
+//   console.log(navButton.eq(showIndex))
+//   if(navButton[showIndex]){
+//     attendList.show()
+//   } else {
+//     moreList.show()
+//   }
+// }
+// $.each(navButton, function(index){
+//   $(this).click(function (){
+//     console.log("인덱스",index)
+    
+//     showIndex = index;
+//     changeList(showIndex) 
+//   })
+// })
 
 
 // 추천상품 데이터

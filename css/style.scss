@@ -381,62 +381,98 @@ body {
             background: #f58320;
             border-radius: 50%;
           }
-          li:nth-child(7) > ul{
-            display: none;
-            position: absolute;
-            left: 50%;
-            top: 43px;
-            padding: 5px 20px;
-            transform: translateX(-50%);
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-            z-index: 99;
-            >li{
-              height: 37px;
-              margin-left: 0;
-              line-height: 37px;
-              white-space: nowrap;
+          li:nth-child(7){
+            button{
+              position: relative;
             }
-          }
-          li:nth-child(8) > ul{
-            display: none;
-            position: absolute;
-            left: 50%;
-            top: 43px;
-            padding: 5px 20px;
-            transform: translateX(-50%);
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-            z-index: 99;
-            >li{
-              height: 37px;
-              margin-left: 0;
-              line-height: 37px;
-              white-space: nowrap;
+            > .active{
+              position: relative;
             }
+            > .active::after{
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 12px;
+              width: 10px;
+              height: 6px;
+              background: url('/images/icoGnbArr2.png') no-repeat center 90%;
+            }
+            button::after{
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 10px;
+              width: 12px;
+              height: 8px;
+              background: url('/images/icoGnbArr2.png') no-repeat center top;            
+            }
+           > ul{
+              display: none;
+              position: absolute;
+              left: 50%;
+              top: 43px;
+              padding: 5px 20px;
+              transform: translateX(-50%);
+              background: #fff;
+              border: 1px solid #ddd;
+              box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+              z-index: 99;
+              >li{
+                height: 37px;
+                margin-left: 0;
+                line-height: 37px;
+                white-space: nowrap;
+               
+              }
           }
-          button:nth-child(1)::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 10px;
-            width: 12px;
-            height: 8px;
-            background: url('/images/icoGnbArr2.png') no-repeat center top;            
+          }
+          li:nth-child(8){
+            button{
+              position: relative;
+            }
+            > .active{
+              position: relative;
+            }
+            > .active::after{
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 12px;
+              width: 10px;
+              height: 6px;
+              background: url('/images/icoGnbArr3.png') no-repeat center bottom;
+            }
+            button::after{
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 10px;
+              width: 12px;
+              height: 8px;
+              background: url('/images/icoGnbArr3.png') no-repeat 50% -30%;            
+            }
+           > ul{
+              display: none;
+              position: absolute;
+              left: 50%;
+              top: 43px;
+              padding: 5px 20px;
+              transform: translateX(-50%);
+              background: #fff;
+              border: 1px solid #ddd;
+              box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+              z-index: 99;
+              >li{
+                height: 37px;
+                margin-left: 0;
+                line-height: 37px;
+                white-space: nowrap;
+               
+              }
+          }
           }
           li:last-child{
             margin-left: 40px;
-          }
-          button:last-child::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 12px;
-            width: 10px;
-            height: 6px;
-            background: url('/images/icoGnbArr3.png') no-repeat center top;
           }
         }
       }

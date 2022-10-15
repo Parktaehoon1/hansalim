@@ -5,40 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>한살림장보기</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- 전체영역 -->
     <div class="wrap">
       <!-- 헤더영역 -->
-      <header class="header"></header>
+      <header class="header">
+        <div class="inner">
+          <div class="header-top">
+            <h1 class="logo"></h1>
+            <span class="day"></span>
+            <ul>
+              <li>매장배달 아이콘</li>
+              <li>로그인</li>
+              <li>나의한살림</li>
+              <li>조합원센터</li>
+              <li>매장안내</li>
+            </ul>
+          </div>
+          <div class="header-bottom"></div>
+        </div>
+      </header>
       <!-- 비주얼영역 -->
       <section class="visual"></section>
       <!-- 추천상품 -->
       <section class="purpose">
         <div class="inner">
-          <div class="good-wrap">
-            <div class="good-box">
-              <a href="#" class="img-link">
-                <img src="images/good_1.jpg" alt="" />
-              </a>
-              <ul class="good-info">
-                <li>
-                  <span class="good-info-option">유기농</span>
-                </li>
-                <li>
-                  <p class="good-info-title">제품명(<em>100g</em>)</p>
-                </li>
-                <li>
-                  <p class="good-info-price"><b>5,600</b>원</p>
-                  <button class="good-cart-add">장바구니</button>
-                </li>
-              </ul>
+          <div class="purpose-wrap"></div>
+        </div>
+      </section>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- 계절별 요리 -->
+      <section class="recipe">
+        <div class="inner">
+          <div class="good-list-wrap">
+            <div class="good-list-wrap-left"></div>
+            <div class="good-list-wrap-right">
+              <div class="recipe-list-top">
+                <div class="recipe-box">
+                  <button class="recipe-check" data-price="1000">선택</button>
+                  제품1
+                </div>
+                <div class="recipe-box">
+                  <button class="recipe-check" data-price="800">선택</button>
+                  제품2
+                </div>
+                <div class="recipe-box">
+                  <button class="recipe-check" data-price="2000">선택</button>
+                  제품3
+                </div>
+              </div>
+              <div class="recipe-list-bottom">
+                총가격: <button class="recipe-bt-all">전체선택</button>
+                <p class="recipe-total"></p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!--  -->
     </div>
   </body>
 </html>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link rel="stylesheet" href="js/swiper/swiper.min.css" />
+<script src="js/swiper/swiper.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"
+></script>
 <script src="js/script.js"></script>

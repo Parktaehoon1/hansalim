@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -73,7 +74,7 @@ body {
   transition: transform 0.5s;
 }
 .good-box .img-link:hover img {
-  transform: scale(1.1) translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .good-box .good-info {
   position: relative;
@@ -150,4 +151,14 @@ body {
   display: block;
   float: right;
   width: calc(100% - 305px);
+}
+
+.purpose {
+  position: relative;
+  display: block;
+}
+.purpose .good-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

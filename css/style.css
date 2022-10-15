@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+  word-break: break-all;
+  min-width: 1260px;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.good-box {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 410px;
+  background: #fff;
+}
+.good-box .img-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+.good-box .img-link img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: transform 0.5s;
+}
+.good-box .img-link:hover img {
+  transform: scale(1.1) translate(-50%, -50%);
+}
+.good-box .good-info {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.good-box .good-info li {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.good-box .good-info li .good-info-option {
+  position: relative;
+  display: block;
+  float: left;
+  border: 1px solid #ddd;
+  line-height: 16px;
+}
+.good-box .good-info li .good-info-title {
+  position: relative;
+  display: block;
+}
+.good-box .good-info li .good-info-title em {
+  position: relative;
+  font-style: normal;
+}
+.good-box .good-info li .good-info-price {
+  position: relative;
+  display: block;
+  float: left;
+}
+.good-box .good-info li .good-info-price b {
+  position: relative;
+}
+.good-box .good-info li .good-cart-add {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.section-title {
+  position: relative;
+  display: block;
+}
+.section-title b {
+  font-weight: 700;
+}
+.section-title .color-green {
+  color: #76bd42;
+}
+.section-title .section-title-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background: #707070;
+}
+
+.good-list-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.good-list-wrap .good-list-wrap-left {
+  position: relative;
+  display: block;
+  float: left;
+  width: 305px;
+}
+.good-list-wrap .good-list-wrap-right {
+  position: relative;
+  display: block;
+  float: right;
+  width: calc(100% - 305px);
+}/*# sourceMappingURL=style.css.map */

@@ -48,6 +48,10 @@ body {
   clear: both;
 }
 
+.all-menu-active {
+  width: 420px !important;
+}
+
 // 굿박스 공통클래스
 .good-box {
   position: relative;
@@ -302,7 +306,7 @@ body {
         float: left;
         margin-top: 9px;
         font-size: 0;
-        .all-menu::before{
+        .all::before{
           content: '';
           position: absolute;
           left: 0;
@@ -311,7 +315,7 @@ body {
           height: 2px;
           background: #000;
         }
-        .all-menu::after{
+        .all::after{
           content: '';
           position: absolute;
           left: 0;
@@ -320,7 +324,7 @@ body {
           height: 2px;
           background: #000;
         }
-        .all-menu{
+        .all{
           position: relative;
           display: inline-block;
           vertical-align: top;
@@ -348,6 +352,10 @@ body {
           line-height: 28px;
           margin-left: 8px;
           font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+          > li:hover >a,
+            li:hover >button{
+            color: #76bd42;
+          }
           > li{
             position: relative;
             display: inline-block;
@@ -387,6 +395,7 @@ body {
             }
             > .active{
               position: relative;
+              color: #76bd42;
             }
             > .active::after{
               content: '';
@@ -418,11 +427,13 @@ body {
               box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
               z-index: 99;
               >li{
+                font-size: 15px;
+                font-weight: 400;
+                color: #666;
                 height: 37px;
                 margin-left: 0;
                 line-height: 37px;
                 white-space: nowrap;
-               
               }
           }
           }
@@ -432,6 +443,7 @@ body {
             }
             > .active{
               position: relative;
+              color: #76bd42;
             }
             > .active::after{
               content: '';
@@ -462,17 +474,209 @@ body {
               border: 1px solid #ddd;
               box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
               z-index: 99;
+              >li:hover{
+                font-weight: 700;
+                text-decoration: underline;
+              }
               >li{
+                font-size: 15px;
+                font-weight: 400;
+                color: #666;
                 height: 37px;
                 margin-left: 0;
                 line-height: 37px;
                 white-space: nowrap;
-               
               }
           }
           }
           li:last-child{
             margin-left: 40px;
+          }
+        }
+      }
+      .all-menu{
+        position: absolute;
+        left: 0;
+        top: 54px;
+        display: block;
+        width: 210px;
+        height: 500px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        overflow: hidden;
+        transition: width 0.3s ease-in-out;
+        z-index: 99;
+        .all-menu-detail{
+          position: absolute;
+          left: 210px;
+          top: 0;
+          display: block;
+          width: 210px;
+          height: 100%;
+          background-color: #f9f9f9;
+          .all-menu-detail-list{
+            position: relative;
+            // display: none;
+            padding: 10px 0;
+            >li{
+              position: relative;
+              display: block;
+              line-height: 40px;
+              padding: 0 20px;
+              >a{
+                position: relative;
+                display: inline-block;
+                font-weight: 400;
+                font-size: 15px;
+                color: #000;
+              }
+              >a:hover {
+                font-weight: 500;
+                color:#76bd42;
+              }
+              >a:hover::after{
+                content:'';
+                position:absolute;
+                left:0;
+                bottom:2px;
+                width:100%;
+                height:1px;
+                background:#76bd42;
+              }
+            }
+          } 
+        }
+        .all-menu-wrap{
+          position: relative;
+          display: block;
+          width: 210px;
+          height: 100%;
+          overflow: hidden;
+      
+          background-color: #fff;
+          z-index: 1;
+          .all-list-cate{
+            position: relative;
+            display: block;
+            >li{
+              position: relative;
+              display: block;
+              padding: 0 20px;
+              >a{
+                position: relative;
+                display: block;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 40px;
+                color: #000;
+                letter-spacing: -0.375px;
+              }
+              >a:hover{
+                color: #76bd42;
+              }
+              >a:hover::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 6px;
+                height: 10px;
+                background: url('/images/icoGnbArr1.png') no-repeat;
+                background-position: 0px -10px;
+              }
+            }
+            >li:hover{
+              background-color: #f8f8f8;
+            }
+          }
+          .all-list-theme{
+            position: relative;
+            display: block;
+            >li{
+              position: relative;
+              display: block;
+              padding: 0 20px;
+              >a{
+                position: relative;
+                display: block;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 40px;
+                color: #000;
+                letter-spacing: -0.375px;
+                border-bottom: 1px solid #e8e8e8;
+                .ball{
+                  position: relative;
+                  display: inline-block;
+                }
+                .ball::before{
+                  top: 10px;
+                }
+              }
+              >a:hover{
+                color: #76bd42;
+              }
+              >a:hover::after{
+                background-position: 0px -10px;
+              }
+              >a::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 6px;
+                height: 10px;
+                background: url('/images/icoGnbArr1.png') no-repeat;
+                background-position: 0px 0px;
+              }
+            }
+            li:first-child >a{
+              border-top: 1px solid #666;
+            }
+            li:last-child >a{
+              border-bottom: 1px solid #666;
+            }
+          }
+          .all-list-service{
+            position: relative;
+            display: block;
+            >li{
+              position: relative;
+              display: block;
+              padding: 0 20px;
+              >a{
+                position: relative;
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #666;
+                letter-spacing: -0.375px;
+              }
+              >a:hover{
+                color: #76bd42;
+              }
+              >a:hover::after{
+                background-position: 0px -10px;
+              }
+              >a::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 6px;
+                height: 10px;
+                background: url('/images/icoGnbArr1.png') no-repeat;
+                background-position: 0px 0px;
+              }
+            }
           }
         }
       }
@@ -515,6 +719,22 @@ body {
           height: 42px;
           margin: 0 -3px 0 18px;
           background: url('/images/btnCart.png') no-repeat center;
+          > i{
+            position: absolute;
+            right: -5px;
+            top: -7px;
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: #76bd42;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 18px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            font-style: normal;
+          }
         }
       }
     }

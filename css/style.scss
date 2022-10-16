@@ -87,6 +87,7 @@ body {
       position: relative;
       display: block;
       overflow: hidden;
+      margin-top: 10px;
       .good-info-option {
         // span 태그 될것
         position: relative;
@@ -99,6 +100,14 @@ body {
         // p태그가 될것
         position: relative;
         display: block;
+        overflow: hidden;
+        max-height: 44px;
+        margin-top: 14px;
+        font-size: 17px;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        white-space: normal;
         em {
           position: relative;
           font-style: normal;
@@ -108,8 +117,11 @@ body {
         // p태그가 될것
         position: relative;
         display: block;
-        float: left;
-
+        float: left;      
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0;
         b {
           position: relative;
         }
@@ -118,7 +130,16 @@ body {
         // button 될것
         position: relative;
         display: block;
-        float: right;
+        width: 30px;
+        height: 30px;
+        float: right;    
+        border: 0;
+        font-size: 0;
+        background: url('/images/btnCartList.png') no-repeat;
+        background-position: 0px 0px;
+        border: 0;
+        margin-right: 20px;
+        cursor: pointer;
       }
     }
   }
@@ -865,12 +886,287 @@ body {
 }
 
 // 추천상품
+.recommend {
+  position: relative;
+  display: block;
+  padding: 80px 0;
+  .inner{
+    >h2{
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .recommend-wrap{
+      margin-top: 40px;
+      .good-wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+}
+
+// 알뜰물품// 스와이퍼 영역
+.sale{
+  position: relative;
+  display: block;
+  background-color: #edf9f9;
+  margin-top: 82px;
+  .inner{
+    padding: 80px 0;
+    overflow: hidden;
+    .sale-left{
+      position: relative;
+      display: block;
+      float: left;
+      .section-title{
+        position: relative;
+        display: block;
+        padding-bottom: 24px;
+        >h2{
+          position: relative;
+          display: block;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: -0.8px;
+          >b{
+            position: relative;
+            display: block;
+            font-weight: 700;
+          }
+        }
+      }
+      .section-title::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #707070;
+    }
+      .section-desc{
+        position: relative;
+        display: block;
+        /* font-weight: 400; */
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.375px;
+        margin-top: 24px;
+        >p{}
+      }
+      .section-bt{
+        position: relative;
+        display: block;
+        width: 135px;
+        height: 34px;
+        border: 1px solid #bbb;
+    
+        color: #666;
+        background-color: #fff;
+    
+        font-size: 13px;
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: -0.325px;
+    
+        margin-top: 25px;
+    
+        transition: background-color 0.5s;
+      }
+      .section-bt:hover {
+        background-color: #f8f8f8;
+      }    
+      .sw-sale-control{
+        position: absolute;
+        left: 0;
+        top: 360px;
+        display: block;
+        .sw-sale-prev{
+          position: relative;
+          display: block;
+          width: 26px;
+          height: 20px;
+          border: 0;
+          background: url('/images/swiperArrP.png') no-repeat;
+          background-position: 0px 0px;
+          float: left;
+          cursor: pointer;
+        }
+        .sw-sale-prev:hover {
+          background-position: 0px -20px;
+      }
+        .sw-sale-pg{
+          position: relative;
+          display: block;
+          width: 90px;
+          height: 20px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #bbb;
+          float: left;
+        }
+        .swiper-pagination-fraction {
+          bottom: 3px !important;
+          letter-spacing: -0.4px;
+        }
+        .swiper-pagination-current {
+            color: #000;
+        }
+        .sw-sale-next{
+          position: relative;
+          display: block;
+          width: 26px;
+          height: 20px;
+          border: 0;
+          background: url('/images/swiperArrN.png') no-repeat;
+          background-position: 0px 0px;
+          float: right;
+          cursor: pointer;
+        }
+        .sw-sale-next:hover {
+          background-position: 0px -20px;
+      }
+      }
+    }
+    .sale-right{
+      position: relative;
+      display: block;
+      width: 896px;
+      height: 410px;
+  
+      overflow: hidden;
+  
+      float: right;
+      .sw-sale{
+        .swiper-wrapper{
+          .swiper-slide{
+            .good-link{
+              position: relative;
+              display: block;
+              width: 288px;                    
+              background-color: #fff;
+              padding-bottom: 45px;
+              
+              margin-left: 0;
+              margin: 0 auto;
+              .good-img{
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 288px;
+                overflow: hidden;
+                >img{
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%) scale(1.0);
+                  display: block;
+                  width: 100%;
+                  transition: transform 0.3s;
+                  /* height: 100%; */
+                }
+              }
+              .good-img:hover >img {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+              .good-info{
+                position: relative;
+                display: block;
+                margin-top: 14px;
+                padding: 0 13px;
+                .good-cate{
+                  position: relative;
+                  display: block;
+                  overflow: hidden;
+                }
+                .good-title{
+                  position: relative;
+                  display: block;
+                  height: 44px;
+              
+                  font-size: 17px;
+                  line-height: 22px;
+                  letter-spacing: -0.425px;
+                  word-wrap: break-word;
+                  /* background-color: rosybrown; */
+              
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  word-wrap: break-word;
+              
+                  margin-top: 13px;
+              
+                  /* margin-bottom: 14px; */
+                }
+                .good-price{
+                  position: relative;
+                  display: block;
+              
+                  font-size: 17px;
+                  font-weight: 700;
+                  line-height: 22px;
+                  letter-spacing: 0;
+                  >b{
+                  font-size: 22px;
+                  line-height: 27px;
+                  font-weight: 500;
+                  }
+                }
+              }
+              .good-cart{
+                position: absolute;
+                right: 0px;
+                bottom: 40px;
+            
+                display: block;
+                width: 30px;
+                height: 30px;
+            
+                background: url('/images/btnCartList.png') no-repeat;
+                background-position: 0px 0px;
+                border: 0;
+                margin-right: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//추천상품
 .purpose {
   position: relative;
   display: block;
-  .good-wrap {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  padding: 80px 0;
+  .inner{
+    >h2{
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .purpose-wrap{
+      margin-top: 40px;
+      .good-wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
+
 }
+

@@ -31,12 +31,12 @@ $.each(all_list_cate_li, function (index, item) {
 // 상세 메뉴 영역을 감싸주는 div
 let all_menu_detail = $('.all-menu-detail');
 
-// 타이머 지우기
+// 메뉴디테일에서 마우스 들어오면 타이머 끔
 all_menu_detail.mouseenter(function () {
     clearTimeout(all_menu_timer);
 });
 
-// 상세 메뉴 영역 div 에서 롤 아웃을 하면 조금 기다렸다가 사라지는 타이머 생성
+// 메뉴디테일에서 마우스 떠나면 타이머생성
 all_menu_detail.mouseleave(function () {
     clearTimeout(all_menu_timer);
     // 타이머 생성방법 setTimeout(할일, 대기시간)
@@ -169,6 +169,54 @@ sw_visual_pause.click(function () {
   }
 });
 
+fetch("menu.json")
+.then((res)=>res.json())
+.then((_data)=>{
+  function makeList(_data, _tag, _col) {
+    // 물품 출력 코드
+    let dataTotal = _data.length;
+    // 항목당 보여줄 개수
+    let col = _col;
+    //  만들어질 가로 수
+    let row = Math.ceil(dataTotal / col);
+  
+    let html = "";
+    for (let i = 0, index = 0; i < row; i++) {
+      html += `<div class="good-wrap">`;
+      for (let j = 0; j < col; j++) {
+        if (index < dataTotal) {
+          let goodObj = _data[index];
+          html += `
+      <div class="good-box">
+        <a href="${goodObj.menu_link}" class="img-link">
+          <img src="images/${goodObj.menu_img}" alt="${goodObj.menu_title}" />
+        </a>
+        <ul class="good-info">
+          <li>
+            <p class="good-info-title">${goodObj.menu_title}<em>${goodObj.menu_unit}</em></p>
+          </li>
+          <li>
+            <p class="good-info-price"><b>${goodObj.menu_price}</b>원</p>
+            <button class="good-cart-add">장바구니</button>
+          </li>
+        </ul>
+      </div>
+    `;
+          index++;
+        }
+      }
+  
+      html += `</div>`;
+    }
+  
+    let div = document.querySelector(_tag);
+    div.innerHTML = html;
+  }
+  makeList(_data, ".recommend-wrap", 4);
+})
+
+
+
 
 
 // 추천상품 데이터
@@ -268,7 +316,6 @@ function makeList(_data, _tag, _col) {
   let html = "";
   for (let i = 0, index = 0; i < row; i++) {
     html += `<div class="good-wrap">`;
-
     for (let j = 0; j < col; j++) {
       if (index < dataTotal) {
         let goodObj = _data[index];
@@ -308,6 +355,24 @@ function makeList(_data, _tag, _col) {
 }
 // 추천상품출력
 makeList(purposeData, ".purpose-wrap", 4);
+
+   // 알뜰상품 슬라이드
+   new Swiper('.sw-sale', {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    // loop: true,
+    slidesPerGroup: 3,
+
+    navigation: {
+        nextEl: '.sw-sale-next',
+        prevEl: '.sw-sale-prev',
+    },
+    pagination: {
+        el: '.sw-sale-pg',
+        type: 'fraction',
+    }
+});
+
 
 // 레시피 가격 계산
 let recipeCheck = $(".recipe-check");
@@ -360,3 +425,4 @@ function recipeCalc() {
 }
 
 recipeCalc();
+

@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>한살림장보기</title>
+    <meta name="description" content="한살림장보기 클론코딩 사이트" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, J-query, 한살림장보기, 클론코딩" />
+    <meta name="author" content="한살림" />
+    <meta name="og:site_name" content="한살림장보기 사이트" />
+    <meta name="og:title" content="메타 태그를 통한 검색엔진 최적화" />
+    <title>한살림 장보기 :: 지구를 살리는 뜻깊은 생활실천, 한살림</title>    
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
@@ -316,7 +322,7 @@
             </div>
 
           </div>
-          
+
           <button class="sw-visual-prev"></button>
           <button class="sw-visual-next"></button>
 
@@ -328,15 +334,287 @@
         </div>
       </section>
       <!-- 추천상품 -->
+      <section class="recommend">
+        <div class="inner">
+          <h2>이 물품은 어떠세요?</h2>
+          <!-- json 파일로 연동 -->
+          <div class="recommend-wrap"></div>
+        </div>
+      </section>
+      <!-- 알뜰물품 // 스와이퍼 -->
+        <section class="sale">
+          <div class="inner">
+              <div class="sale-left">
+                  <div class="section-title">
+                      <h2>
+                          놓치기 아쉬운
+                          <b>알뜰물품</b>
+                      </h2>
+                  </div>
+                  <div class="section-desc">
+                      <p>가격인하 물품을<br>
+                          지금 바로 이용해 보세요.</p>
+                  </div>
+                  <a href="#" class="section-bt">더보기</a>
+
+                  <div class="sw-sale-control clearfix">
+                      <button class="sw-sale-prev"></button>
+                      <div class="swiper-pagination sw-sale-pg"></div>
+                      <button class="sw-sale-next"></button>
+                  </div>
+
+              </div>
+              <div class="sale-right">
+                  <!-- 알뜰상품 슬라이드 -->
+                  <div class="swiper-container sw-sale">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">단감(조생:1.5kg)
+                                      </span>
+                                      <span class="good-price">
+                                          <b>15,500</b>원
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+                          <div class="swiper-slide">
+                              <a href="#" class="good-link">
+                                  <span class="good-img">
+                                      <img src="/images/sale1.jpg" alt="제품">
+                                  </span>
+
+                                  <div class="good-info">
+                                      <span class="good-cate">
+
+                                      </span>
+                                      <span class="good-title">
+                                      </span>
+                                      <span class="good-price">
+                                          <b></b>
+                                      </span>
+                                  </div>
+                                  <button class="good-cart"></button>
+                              </a>
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+
+      <!-- 반가운새물품 -->
+      <section></section>
+      <!-- 조합원추천 -->
+      <section></section>
+      <!-- 인기물품 -->
       <section class="purpose">
         <div class="inner">
+          <h2>이 물품은 어떠세요?</h2>
           <div class="purpose-wrap"></div>
         </div>
       </section>
-      <!--  -->
-      <!--  -->
-      <!--  -->
-      <!--  -->
       <!--  -->
       <!-- 계절별 요리 -->
       <section class="recipe">

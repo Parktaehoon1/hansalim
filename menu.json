@@ -1,0 +1,66 @@
+[
+    {
+        "menu_id" : "1",
+        "menu_img" : "menu1.jpg",
+        "menu_title" : "한우불고기부리토",
+        "menu_unit": "(91g)",
+        "menu_price" : "3700",
+        "menu_link" : "#"
+    }, 
+    {
+        "menu_id" : "2",
+        "menu_img" : "menu2.jpg",
+        "menu_title" : "사과",
+        "menu_unit": "(2kg)",
+        "menu_price" : "13300",
+        "menu_link" : "#"
+    }, 
+    {
+        "menu_id" : "3",
+        "menu_img" : "menu3.jpg",
+        "menu_title" : "밤",
+        "menu_unit": "(유/1kg)",
+        "menu_price" : "10800",
+        "menu_link" : "#"
+    }, 
+    {
+        "menu_id" : "4",
+        "menu_img" : "menu4.jpg",
+        "menu_title" : "갈색양송이버섯",
+        "menu_unit": "(140g)",
+        "menu_price" : "3250",
+        "menu_link" : "#"
+    }, 
+    {
+        "menu_id" : "5",
+        "menu_img" : "menu5.jpg",
+        "menu_title" : "우뭇가사리묵",
+        "menu_unit": "(420g)",
+        "menu_price" : "2600",
+        "menu_link" : "#"
+    },
+    {
+        "menu_id" : "6",
+        "menu_img" : "menu6.jpg",
+        "menu_title" : "청경채",
+        "menu_unit": "(200g)",
+        "menu_price" : "1400",
+        "menu_link" : "#"
+    },
+    {
+        "menu_id" : "7",
+        "menu_img" : "menu7.jpg",
+        "menu_title" : "남도김치",
+        "menu_unit": "(2kg)",
+        "menu_price" : "21000",
+        "menu_link" : "#"
+    },
+    {
+        "menu_id" : "8",
+        "menu_img" : "menu8.jpg",
+        "menu_title" : "상추",
+        "menu_unit":"(150g)",
+        "menu_price" : "1600",
+        "menu_link" : "#"
+    }
+]

@@ -39,7 +39,6 @@ all_menu_detail.mouseenter(function () {
 // 상세 메뉴 영역 div 에서 롤 아웃을 하면 조금 기다렸다가 사라지는 타이머 생성
 all_menu_detail.mouseleave(function () {
     clearTimeout(all_menu_timer);
-
     // 타이머 생성방법 setTimeout(할일, 대기시간)
     all_menu_timer = setTimeout(allMenuHide, all_menu_timer_delay);
 });
@@ -119,8 +118,6 @@ moreBtn.click(function(){
   attendList.hide()
 })
 
-
-
 // function changeList(showIndex){
 //   console.log(showIndex)
 //   console.log(navButton.eq(showIndex))
@@ -138,6 +135,40 @@ moreBtn.click(function(){
 //     changeList(showIndex) 
 //   })
 // })
+
+// visual section 부분
+let sw_visual = new Swiper('.sw-visual', {
+  autoplay: {
+      delay: 3000,
+      // 스와이퍼 후, 자동재생 비활성화 되지 않음
+      disableOnInteraction: false,
+  },
+  speed: 1000,
+  loop: true,
+  navigation: {
+      nextEl: '.sw-visual-next',
+      prevEl: '.sw-visual-prev',
+  },
+  pagination: {
+      el: '.sw-visual-pg',
+      type: 'fraction',
+  }
+});
+
+let sw_visual_pause = $('.sw-visual-pause');
+sw_visual_pause.click(function () {
+  let temp = $(this).hasClass('sw-visual-pause-active')
+  if (temp != true) {
+      // 적용이 안되었다. 그래서 적용
+      $(this).addClass('sw-visual-pause-active')
+      sw_visual.autoplay.stop();
+  } else {
+      // 적용이 되었다. 그래서 적용해제
+      $(this).removeClass('sw-visual-pause-active')
+      sw_visual.autoplay.start();
+  }
+});
+
 
 
 // 추천상품 데이터

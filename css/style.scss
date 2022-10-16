@@ -306,7 +306,7 @@ body {
         float: left;
         margin-top: 9px;
         font-size: 0;
-        .all::before{
+        #all::before{
           content: '';
           position: absolute;
           left: 0;
@@ -315,7 +315,7 @@ body {
           height: 2px;
           background: #000;
         }
-        .all::after{
+        #all::after{
           content: '';
           position: absolute;
           left: 0;
@@ -324,7 +324,7 @@ body {
           height: 2px;
           background: #000;
         }
-        .all{
+        #all{
           position: relative;
           display: inline-block;
           vertical-align: top;
@@ -332,6 +332,7 @@ body {
           font-size: 17px;
           font-weight: 500;
           line-height: 28px;
+          cursor: pointer;
           span::before{
             content: '';
             position: absolute;
@@ -505,6 +506,7 @@ body {
         border: 1px solid #ddd;
         box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
         overflow: hidden;
+        visibility: hidden;
         transition: width 0.3s ease-in-out;
         z-index: 99;
         .all-menu-detail{
@@ -740,9 +742,127 @@ body {
     }
   }
 }
-
-
 // 비주얼영역
+.visual{
+  position: relative;
+  display: block;
+  height: 410px;
+  .sw-visual{
+    .swiper-wrapper{
+      .swiper-slide{}
+    }
+    .sw-visual-prev{
+      position: absolute;
+      left: calc(50% - 578px);
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 64px;
+      height: 64px;
+      background: url('/images/visualArrP.png') no-repeat;
+      background-position: 0px -64px;
+      z-index: 99;
+      border: 0;
+      cursor: pointer;
+    }
+    .sw-visual-prev:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.15);
+      }
+      .sw-visual-prev:hover {
+          background-position: 0px 0px;
+      }
+  
+    .sw-visual-next{
+      position: absolute;
+      right: calc(50% - 650px);
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      width: 64px;
+      height: 64px;
+      background: url('/images/visualArrN.png') no-repeat;
+      background-position: 0px -64px;
+      z-index: 99;
+      border: 0;
+      cursor: pointer;
+    }
+    .sw-visual-next:hover::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.15);
+      }
+      .sw-visual-next:hover {
+          background-position: 0px 0px;
+      }
+  
+    .sw-visual-control{
+      position: absolute;
+      left: calc(50% - 600px);
+      bottom: 43px;
+      display: block;
+      z-index: 99;
+      .sw-visual-pause{
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('/images/visualPlay.png') no-repeat;
+        background-position: 0px 0px;
+        cursor: pointer;
+        float: left;
+        margin-right: 6px;
+      }
+      .sw-visual-pause-active {
+        background-position: 0px -30px;
+      }
+      .sw-visual-pg{
+        position: relative;
+        display: block;
+        width: 52px;
+        height: 30px;
+        background: url('/images/visualNum.png') no-repeat;
+        float: left;
+        margin-right: 3px;
+      }
+      .sw-visual-bt{
+        position: relative;
+        display: block;
+        width: 29px;
+        height: 30px;
+        background: url('/images/visualMore.png') no-repeat;
+        border: 0;
+        cursor: pointer;
+        float: left;
+      }
+    }
+    .swiper-pagination-fraction {
+      bottom: 0 !important;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 30px;
+      letter-spacing: -0.35px;
+      padding-left: 2px;
+  }
+  }
+}
 
 // 추천상품
 .purpose {

@@ -117,7 +117,7 @@ body {
         // p태그가 될것
         position: relative;
         display: block;
-        float: left;      
+        float: left;
         font-weight: 500;
         font-size: 22px;
         line-height: 27px;
@@ -132,10 +132,10 @@ body {
         display: block;
         width: 30px;
         height: 30px;
-        float: right;    
+        float: right;
         border: 0;
         font-size: 0;
-        background: url('/images/btnCartList.png') no-repeat;
+        background: url("/images/btnCartList.png") no-repeat;
         background-position: 0px 0px;
         border: 0;
         margin-right: 20px;
@@ -185,56 +185,56 @@ body {
 }
 
 // 헤더영역
-.header{
+.header {
   position: relative;
   display: block;
-  .inner{
-    > .header-top{
+  .inner {
+    > .header-top {
       position: relative;
       display: block;
-      padding: 20px 0 6px 0;  
-     > .header-top-left{
-      position: relative;
-      display: block;
-      float: left;
-      .logo{
+      padding: 20px 0 6px 0;
+      > .header-top-left {
         position: relative;
-        display: inline-block;
-        font-size: 0;
-        width: 191px;
-        height: 31px;
-        background: url('/images/logo.png') no-repeat center;
-        background-size: cover;
-        padding-top: 10px;
+        display: block;
+        float: left;
+        .logo {
+          position: relative;
+          display: inline-block;
+          font-size: 0;
+          width: 191px;
+          height: 31px;
+          background: url("/images/logo.png") no-repeat center;
+          background-size: cover;
+          padding-top: 10px;
+        }
+        .day::before {
+          content: "";
+          position: relative;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("/images/icoLocation.png") no-repeat center;
+          background-size: cover;
+        }
+        .day {
+          position: relative;
+          display: inline-block;
+          color: #666666;
+          margin-left: 10px;
+        }
       }
-      .day::before{
-        content: '';
-        position: relative;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        background: url('/images/icoLocation.png') no-repeat center;
-        background-size: cover;
-      }
-      .day{
-        position: relative;
-        display: inline-block;
-        color: #666666;
-        margin-left: 10px;
-      }
-    }
-      > ul{
+      > ul {
         position: relative;
         display: flex;
         float: right;
-        > li:first-child{
+        > li:first-child {
           position: relative;
           font-size: 0;
           width: 102px;
           height: 20px;
-          background: url('/images/icoDlvr.png') no-repeat center;
+          background: url("/images/icoDlvr.png") no-repeat center;
           background-size: cover;
-          > a{
+          > a {
             position: relative;
             display: block;
             width: 102px;
@@ -244,8 +244,8 @@ body {
         }
         > li:nth-child(3)::before,
         > li:nth-child(4)::before,
-        > li:nth-child(5)::before{
-          content: '';
+        > li:nth-child(5)::before {
+          content: "";
           position: absolute;
           left: 0;
           top: 7px;
@@ -253,29 +253,30 @@ body {
           height: 8px;
           background: #bbb;
         }
-        li:nth-child(4){
+        li:nth-child(4) {
           position: relative;
           color: #666;
           padding-right: 15px;
-          > button{
+          > button {
             position: relative;
             border: 0;
             background-color: transparent;
             font-size: 13px;
             line-height: 19px;
             color: #666;
-            font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+            font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕",
+              sans-serif;
           }
-          button::after{
+          button::after {
             content: "";
             position: absolute;
             right: -15px;
             top: 6px;
             width: 10px;
             height: 6px;
-            background: url('/images/icoMyMenu.png') no-repeat right top;
+            background: url("/images/icoMyMenu.png") no-repeat right top;
           }
-          ul{
+          ul {
             display: none;
             position: absolute;
             left: 50%;
@@ -287,9 +288,9 @@ body {
             border: solid 1px #ddd;
             box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
             transform: translateX(-50%);
-            >li{
+            > li {
               margin-top: 10px;
-              >a{
+              > a {
                 position: relative;
                 white-space: nowrap;
                 color: #666;
@@ -297,18 +298,18 @@ body {
                 line-height: 19px;
               }
             }
-            >li:hover >a{
+            > li:hover > a {
               font-weight: 700;
               text-decoration: underline;
             }
           }
         }
-        > li{
+        > li {
           position: relative;
           display: block;
           margin-left: 11px;
           padding-left: 11px;
-          > a{
+          > a {
             font-size: 13px;
             line-height: 19px;
             color: #666;
@@ -316,19 +317,19 @@ body {
         }
       }
     }
-    .header-bottom{
+    .header-bottom {
       position: relative;
       display: block;
       width: 1200px;
       margin: 0 auto;
       padding: 10px 0;
-      .nav{
+      .nav {
         position: relative;
         float: left;
         margin-top: 9px;
         font-size: 0;
-        #all::before{
-          content: '';
+        #all::before {
+          content: "";
           position: absolute;
           left: 0;
           top: 5px;
@@ -336,8 +337,8 @@ body {
           height: 2px;
           background: #000;
         }
-        #all::after{
-          content: '';
+        #all::after {
+          content: "";
           position: absolute;
           left: 0;
           top: 13px;
@@ -345,7 +346,7 @@ body {
           height: 2px;
           background: #000;
         }
-        #all{
+        #all {
           position: relative;
           display: inline-block;
           vertical-align: top;
@@ -354,8 +355,8 @@ body {
           font-weight: 500;
           line-height: 28px;
           cursor: pointer;
-          span::before{
-            content: '';
+          span::before {
+            content: "";
             position: absolute;
             left: 0;
             top: 21px;
@@ -363,36 +364,38 @@ body {
             height: 2px;
             background: #000;
           }
-          span{
+          span {
             display: block;
             line-height: 28px;
           }
         }
-        > ul{
+        > ul {
           position: relative;
           display: inline-block;
           line-height: 28px;
           margin-left: 8px;
-          font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
-          > li:hover >a,
-            li:hover >button{
+          font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕",
+            sans-serif;
+          > li:hover > a,
+          li:hover > button {
             color: #76bd42;
           }
-          > li{
+          > li {
             position: relative;
             display: inline-block;
             padding: 0 10px;
             font-size: 17px;
             font-weight: 500;
-            > a{
+            > a {
               position: relative;
               display: block;
               font-size: 17px;
             }
-            >button{
+            > button {
               font-size: 17px;
               font-weight: 500;
-              font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕", sans-serif;
+              font-family: "Roboto", "Noto Sans KR", "Roboto", "맑은고딕",
+                sans-serif;
               color: #000;
               background: transparent;
               border: none;
@@ -401,8 +404,8 @@ body {
             }
           }
           li:nth-child(5)::after,
-          li:nth-child(6)::after{
-            content: '';
+          li:nth-child(6)::after {
+            content: "";
             position: absolute;
             top: 5px;
             right: 2px;
@@ -411,33 +414,33 @@ body {
             background: #f58320;
             border-radius: 50%;
           }
-          li:nth-child(7){
-            button{
+          li:nth-child(7) {
+            button {
               position: relative;
             }
-            > .active{
+            > .active {
               position: relative;
               color: #76bd42;
             }
-            > .active::after{
-              content: '';
+            > .active::after {
+              content: "";
               position: absolute;
               right: -10px;
               top: 12px;
               width: 10px;
               height: 6px;
-              background: url('/images/icoGnbArr2.png') no-repeat center 90%;
+              background: url("/images/icoGnbArr2.png") no-repeat center 90%;
             }
-            button::after{
-              content: '';
+            button::after {
+              content: "";
               position: absolute;
               right: -10px;
               top: 10px;
               width: 12px;
               height: 8px;
-              background: url('/images/icoGnbArr2.png') no-repeat center top;            
+              background: url("/images/icoGnbArr2.png") no-repeat center top;
             }
-           > ul{
+            > ul {
               display: none;
               position: absolute;
               left: 50%;
@@ -448,7 +451,7 @@ body {
               border: 1px solid #ddd;
               box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
               z-index: 99;
-              >li{
+              > li {
                 font-size: 15px;
                 font-weight: 400;
                 color: #666;
@@ -457,35 +460,35 @@ body {
                 line-height: 37px;
                 white-space: nowrap;
               }
+            }
           }
-          }
-          li:nth-child(8){
-            button{
+          li:nth-child(8) {
+            button {
               position: relative;
             }
-            > .active{
+            > .active {
               position: relative;
               color: #76bd42;
             }
-            > .active::after{
-              content: '';
+            > .active::after {
+              content: "";
               position: absolute;
               right: -10px;
               top: 12px;
               width: 10px;
               height: 6px;
-              background: url('/images/icoGnbArr3.png') no-repeat center bottom;
+              background: url("/images/icoGnbArr3.png") no-repeat center bottom;
             }
-            button::after{
-              content: '';
+            button::after {
+              content: "";
               position: absolute;
               right: -10px;
               top: 10px;
               width: 12px;
               height: 8px;
-              background: url('/images/icoGnbArr3.png') no-repeat 50% -30%;            
+              background: url("/images/icoGnbArr3.png") no-repeat 50% -30%;
             }
-           > ul{
+            > ul {
               display: none;
               position: absolute;
               left: 50%;
@@ -496,11 +499,11 @@ body {
               border: 1px solid #ddd;
               box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
               z-index: 99;
-              >li:hover{
+              > li:hover {
                 font-weight: 700;
                 text-decoration: underline;
               }
-              >li{
+              > li {
                 font-size: 15px;
                 font-weight: 400;
                 color: #666;
@@ -509,14 +512,14 @@ body {
                 line-height: 37px;
                 white-space: nowrap;
               }
+            }
           }
-          }
-          li:last-child{
+          li:last-child {
             margin-left: 40px;
           }
         }
       }
-      .all-menu{
+      .all-menu {
         position: absolute;
         left: 0;
         top: 54px;
@@ -530,7 +533,7 @@ body {
         visibility: hidden;
         transition: width 0.3s ease-in-out;
         z-index: 99;
-        .all-menu-detail{
+        .all-menu-detail {
           position: absolute;
           left: 210px;
           top: 0;
@@ -538,55 +541,55 @@ body {
           width: 210px;
           height: 100%;
           background-color: #f9f9f9;
-          .all-menu-detail-list{
+          .all-menu-detail-list {
             position: relative;
             // display: none;
             padding: 10px 0;
-            >li{
+            > li {
               position: relative;
               display: block;
               line-height: 40px;
               padding: 0 20px;
-              >a{
+              > a {
                 position: relative;
                 display: inline-block;
                 font-weight: 400;
                 font-size: 15px;
                 color: #000;
               }
-              >a:hover {
+              > a:hover {
                 font-weight: 500;
-                color:#76bd42;
+                color: #76bd42;
               }
-              >a:hover::after{
-                content:'';
-                position:absolute;
-                left:0;
-                bottom:2px;
-                width:100%;
-                height:1px;
-                background:#76bd42;
+              > a:hover::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 2px;
+                width: 100%;
+                height: 1px;
+                background: #76bd42;
               }
             }
-          } 
+          }
         }
-        .all-menu-wrap{
+        .all-menu-wrap {
           position: relative;
           display: block;
           width: 210px;
           height: 100%;
           overflow: hidden;
-      
+
           background-color: #fff;
           z-index: 1;
-          .all-list-cate{
+          .all-list-cate {
             position: relative;
             display: block;
-            >li{
+            > li {
               position: relative;
               display: block;
               padding: 0 20px;
-              >a{
+              > a {
                 position: relative;
                 display: block;
                 font-size: 15px;
@@ -595,11 +598,11 @@ body {
                 color: #000;
                 letter-spacing: -0.375px;
               }
-              >a:hover{
+              > a:hover {
                 color: #76bd42;
               }
-              >a:hover::after{
-                content: '';
+              > a:hover::after {
+                content: "";
                 position: absolute;
                 right: 0;
                 top: 50%;
@@ -607,22 +610,22 @@ body {
                 display: block;
                 width: 6px;
                 height: 10px;
-                background: url('/images/icoGnbArr1.png') no-repeat;
+                background: url("/images/icoGnbArr1.png") no-repeat;
                 background-position: 0px -10px;
               }
             }
-            >li:hover{
+            > li:hover {
               background-color: #f8f8f8;
             }
           }
-          .all-list-theme{
+          .all-list-theme {
             position: relative;
             display: block;
-            >li{
+            > li {
               position: relative;
               display: block;
               padding: 0 20px;
-              >a{
+              > a {
                 position: relative;
                 display: block;
                 font-size: 15px;
@@ -631,22 +634,22 @@ body {
                 color: #000;
                 letter-spacing: -0.375px;
                 border-bottom: 1px solid #e8e8e8;
-                .ball{
+                .ball {
                   position: relative;
                   display: inline-block;
                 }
-                .ball::before{
+                .ball::before {
                   top: 10px;
                 }
               }
-              >a:hover{
+              > a:hover {
                 color: #76bd42;
               }
-              >a:hover::after{
+              > a:hover::after {
                 background-position: 0px -10px;
               }
-              >a::after{
-                content: '';
+              > a::after {
+                content: "";
                 position: absolute;
                 right: 0;
                 top: 50%;
@@ -654,25 +657,25 @@ body {
                 display: block;
                 width: 6px;
                 height: 10px;
-                background: url('/images/icoGnbArr1.png') no-repeat;
+                background: url("/images/icoGnbArr1.png") no-repeat;
                 background-position: 0px 0px;
               }
             }
-            li:first-child >a{
+            li:first-child > a {
               border-top: 1px solid #666;
             }
-            li:last-child >a{
+            li:last-child > a {
               border-bottom: 1px solid #666;
             }
           }
-          .all-list-service{
+          .all-list-service {
             position: relative;
             display: block;
-            >li{
+            > li {
               position: relative;
               display: block;
               padding: 0 20px;
-              >a{
+              > a {
                 position: relative;
                 display: block;
                 font-size: 14px;
@@ -681,14 +684,14 @@ body {
                 color: #666;
                 letter-spacing: -0.375px;
               }
-              >a:hover{
+              > a:hover {
                 color: #76bd42;
               }
-              >a:hover::after{
+              > a:hover::after {
                 background-position: 0px -10px;
               }
-              >a::after{
-                content: '';
+              > a::after {
+                content: "";
                 position: absolute;
                 right: 0;
                 top: 50%;
@@ -696,17 +699,17 @@ body {
                 display: block;
                 width: 6px;
                 height: 10px;
-                background: url('/images/icoGnbArr1.png') no-repeat;
+                background: url("/images/icoGnbArr1.png") no-repeat;
                 background-position: 0px 0px;
               }
             }
           }
         }
       }
-      .search-wrap{
+      .search-wrap {
         float: right;
         line-height: 28px;
-        .search-form{
+        .search-form {
           position: relative;
           display: inline-block;
           padding: 0 6px 0 19px;
@@ -714,7 +717,7 @@ body {
           background: #f7f7f7;
           border: 1px solid #f7f7f7;
           vertical-align: top;
-          input{
+          input {
             position: relative;
             display: inline-block;
             width: 255px;
@@ -725,24 +728,24 @@ body {
             border: 0;
             vertical-align: top;
           }
-          button{
+          button {
             position: relative;
             display: inline-block;
             width: 40px;
             height: 40px;
-            background: url('/images/btnSearch.png') no-repeat center;
+            background: url("/images/btnSearch.png") no-repeat center;
             border: none;
             vertical-align: top;
           }
         }
-        .cart{
+        .cart {
           position: relative;
           display: inline-block;
           width: 42px;
           height: 42px;
           margin: 0 -3px 0 18px;
-          background: url('/images/btnCart.png') no-repeat center;
-          > i{
+          background: url("/images/btnCart.png") no-repeat center;
+          > i {
             position: absolute;
             right: -5px;
             top: -7px;
@@ -764,15 +767,25 @@ body {
   }
 }
 // 비주얼영역
-.visual{
+.visual {
   position: relative;
   display: block;
   height: 410px;
-  .sw-visual{
-    .swiper-wrapper{
-      .swiper-slide{}
+  .sw-visual {
+    .swiper-wrapper {
+      .swiper-slide {
+        > a {
+          position: relative;
+          display: block;
+          img {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 410px;
+          }
+        }
+      }
     }
-    .sw-visual-prev{
+    .sw-visual-prev {
       position: absolute;
       left: calc(50% - 578px);
       top: 50%;
@@ -780,14 +793,14 @@ body {
       display: block;
       width: 64px;
       height: 64px;
-      background: url('/images/visualArrP.png') no-repeat;
+      background: url("/images/visualArrP.png") no-repeat;
       background-position: 0px -64px;
       z-index: 99;
       border: 0;
       cursor: pointer;
     }
     .sw-visual-prev:hover::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -796,12 +809,12 @@ body {
       height: 64px;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.15);
-      }
-      .sw-visual-prev:hover {
-          background-position: 0px 0px;
-      }
-  
-    .sw-visual-next{
+    }
+    .sw-visual-prev:hover {
+      background-position: 0px 0px;
+    }
+
+    .sw-visual-next {
       position: absolute;
       right: calc(50% - 650px);
       top: 50%;
@@ -810,14 +823,14 @@ body {
       display: block;
       width: 64px;
       height: 64px;
-      background: url('/images/visualArrN.png') no-repeat;
+      background: url("/images/visualArrN.png") no-repeat;
       background-position: 0px -64px;
       z-index: 99;
       border: 0;
       cursor: pointer;
     }
     .sw-visual-next:hover::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 0;
@@ -826,24 +839,24 @@ body {
       height: 64px;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.15);
-      }
-      .sw-visual-next:hover {
-          background-position: 0px 0px;
-      }
-  
-    .sw-visual-control{
+    }
+    .sw-visual-next:hover {
+      background-position: 0px 0px;
+    }
+
+    .sw-visual-control {
       position: absolute;
       left: calc(50% - 600px);
       bottom: 43px;
       display: block;
       z-index: 99;
-      .sw-visual-pause{
+      .sw-visual-pause {
         position: relative;
         display: block;
         width: 30px;
         height: 30px;
         border: 0;
-        background: url('/images/visualPlay.png') no-repeat;
+        background: url("/images/visualPlay.png") no-repeat;
         background-position: 0px 0px;
         cursor: pointer;
         float: left;
@@ -852,21 +865,21 @@ body {
       .sw-visual-pause-active {
         background-position: 0px -30px;
       }
-      .sw-visual-pg{
+      .sw-visual-pg {
         position: relative;
         display: block;
         width: 52px;
         height: 30px;
-        background: url('/images/visualNum.png') no-repeat;
+        background: url("/images/visualNum.png") no-repeat;
         float: left;
         margin-right: 3px;
       }
-      .sw-visual-bt{
+      .sw-visual-bt {
         position: relative;
         display: block;
         width: 29px;
         height: 30px;
-        background: url('/images/visualMore.png') no-repeat;
+        background: url("/images/visualMore.png") no-repeat;
         border: 0;
         cursor: pointer;
         float: left;
@@ -881,7 +894,7 @@ body {
       line-height: 30px;
       letter-spacing: -0.35px;
       padding-left: 2px;
-  }
+    }
   }
 }
 
@@ -890,13 +903,13 @@ body {
   position: relative;
   display: block;
   padding: 80px 0;
-  .inner{
-    >h2{
+  .inner {
+    > h2 {
       font-size: 32px;
       font-weight: 700;
       line-height: 40px;
     }
-    .recommend-wrap{
+    .recommend-wrap {
       margin-top: 40px;
       .good-wrap {
         position: relative;
@@ -905,34 +918,33 @@ body {
       }
     }
   }
-
 }
 
 // 알뜰물품// 스와이퍼 영역
-.sale{
+.sale {
   position: relative;
   display: block;
   background-color: #edf9f9;
   margin-top: 82px;
-  .inner{
+  .inner {
     padding: 80px 0;
     overflow: hidden;
-    .sale-left{
+    .sale-left {
       position: relative;
       display: block;
       float: left;
-      .section-title{
+      .section-title {
         position: relative;
         display: block;
         padding-bottom: 24px;
-        >h2{
+        > h2 {
           position: relative;
           display: block;
           font-size: 32px;
           font-weight: 400;
           line-height: 40px;
           letter-spacing: -0.8px;
-          >b{
+          > b {
             position: relative;
             display: block;
             font-weight: 700;
@@ -940,17 +952,17 @@ body {
         }
       }
       .section-title::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 0;
-    
+
         display: block;
         width: 20px;
         height: 2px;
         background-color: #707070;
-    }
-      .section-desc{
+      }
+      .section-desc {
         position: relative;
         display: block;
         /* font-weight: 400; */
@@ -958,50 +970,51 @@ body {
         line-height: 24px;
         letter-spacing: -0.375px;
         margin-top: 24px;
-        >p{}
+        > p {
+        }
       }
-      .section-bt{
+      .section-bt {
         position: relative;
         display: block;
         width: 135px;
         height: 34px;
         border: 1px solid #bbb;
-    
+
         color: #666;
         background-color: #fff;
-    
+
         font-size: 13px;
         text-align: center;
         line-height: 32px;
         letter-spacing: -0.325px;
-    
+
         margin-top: 25px;
-    
+
         transition: background-color 0.5s;
       }
       .section-bt:hover {
         background-color: #f8f8f8;
-      }    
-      .sw-sale-control{
+      }
+      .sw-sale-control {
         position: absolute;
         left: 0;
         top: 360px;
         display: block;
-        .sw-sale-prev{
+        .sw-sale-prev {
           position: relative;
           display: block;
           width: 26px;
           height: 20px;
           border: 0;
-          background: url('/images/swiperArrP.png') no-repeat;
+          background: url("/images/swiperArrP.png") no-repeat;
           background-position: 0px 0px;
           float: left;
           cursor: pointer;
         }
         .sw-sale-prev:hover {
           background-position: 0px -20px;
-      }
-        .sw-sale-pg{
+        }
+        .sw-sale-pg {
           position: relative;
           display: block;
           width: 90px;
@@ -1017,122 +1030,122 @@ body {
           letter-spacing: -0.4px;
         }
         .swiper-pagination-current {
-            color: #000;
+          color: #000;
         }
-        .sw-sale-next{
+        .sw-sale-next {
           position: relative;
           display: block;
           width: 26px;
           height: 20px;
           border: 0;
-          background: url('/images/swiperArrN.png') no-repeat;
+          background: url("/images/swiperArrN.png") no-repeat;
           background-position: 0px 0px;
           float: right;
           cursor: pointer;
         }
         .sw-sale-next:hover {
           background-position: 0px -20px;
-      }
+        }
       }
     }
-    .sale-right{
+    .sale-right {
       position: relative;
       display: block;
       width: 896px;
       height: 410px;
-  
+
       overflow: hidden;
-  
+
       float: right;
-      .sw-sale{
-        .swiper-wrapper{
-          .swiper-slide{
-            .good-link{
+      .sw-sale {
+        .swiper-wrapper {
+          .swiper-slide {
+            .good-link {
               position: relative;
               display: block;
-              width: 288px;                    
+              width: 288px;
               background-color: #fff;
               padding-bottom: 45px;
-              
+
               margin-left: 0;
               margin: 0 auto;
-              .good-img{
+              .good-img {
                 position: relative;
                 display: block;
                 width: 100%;
                 height: 288px;
                 overflow: hidden;
-                >img{
+                > img {
                   position: absolute;
                   left: 50%;
                   top: 50%;
-                  transform: translate(-50%, -50%) scale(1.0);
+                  transform: translate(-50%, -50%) scale(1);
                   display: block;
                   width: 100%;
                   transition: transform 0.3s;
                   /* height: 100%; */
                 }
               }
-              .good-img:hover >img {
+              .good-img:hover > img {
                 transform: translate(-50%, -50%) scale(1.1);
-            }
-              .good-info{
+              }
+              .good-info {
                 position: relative;
                 display: block;
                 margin-top: 14px;
                 padding: 0 13px;
-                .good-cate{
+                .good-cate {
                   position: relative;
                   display: block;
                   overflow: hidden;
                 }
-                .good-title{
+                .good-title {
                   position: relative;
                   display: block;
                   height: 44px;
-              
+
                   font-size: 17px;
                   line-height: 22px;
                   letter-spacing: -0.425px;
                   word-wrap: break-word;
                   /* background-color: rosybrown; */
-              
+
                   overflow: hidden;
                   text-overflow: ellipsis;
                   display: -webkit-box;
                   -webkit-line-clamp: 2;
                   -webkit-box-orient: vertical;
                   word-wrap: break-word;
-              
+
                   margin-top: 13px;
-              
+
                   /* margin-bottom: 14px; */
                 }
-                .good-price{
+                .good-price {
                   position: relative;
                   display: block;
-              
+
                   font-size: 17px;
                   font-weight: 700;
                   line-height: 22px;
                   letter-spacing: 0;
-                  >b{
-                  font-size: 22px;
-                  line-height: 27px;
-                  font-weight: 500;
+                  > b {
+                    font-size: 22px;
+                    line-height: 27px;
+                    font-weight: 500;
                   }
                 }
               }
-              .good-cart{
+              .good-cart {
                 position: absolute;
                 right: 0px;
                 bottom: 40px;
-            
+
                 display: block;
                 width: 30px;
                 height: 30px;
-            
-                background: url('/images/btnCartList.png') no-repeat;
+
+                background: url("/images/btnCartList.png") no-repeat;
                 background-position: 0px 0px;
                 border: 0;
                 margin-right: 20px;
@@ -1146,19 +1159,138 @@ body {
   }
 }
 
+// 반가운 새물품
+.new-product {
+  position: relative;
+  display: block;
+  padding: 80px 0;
+  .inner {
+    .new-product-title {
+      position: relative;
+      display: block;
+      > h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+        > b {
+          position: relative;
+          display: block;
+          font-weight: 700;
+        }
+      }
+      > a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        height: 32px;
+        line-height: 30px;
+        width: 100px;
+        border: 1px solid #bbb;
+        text-align: center;
+        color: #bbb;
+        font-size: 13px;
+        padding: 0 12px;
+      }
+    }
+    .new-product-desc {
+      position: relative;
+      display: block;
+      height: 504px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+      .new-product-desc-left {
+        position: relative;
+        float: left;
+        margin-top: 32px;
+        > img {
+          position: relative;
+          display: block;
+          width: 592px;
+          height: 370px;
+        }
+        .new-product-main-title {
+          > a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            letter-spacing: -0.025em;
+            font-size: 25px;
+            color: #000;
+            font-weight: 700;
+            line-height: 37px;
+            margin-top: 16px;
+            cursor: pointer;
+          }
+        }
+        .new-product-sub-title {
+          > a {
+            color: #000;
+            text-decoration: none;
+            letter-spacing: -0.025em;
+            font-size: 17px;
+            line-height: 25px;
+            margin-top: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+      > ul {
+        position: relative;
+        width: calc(100% - 610px);
+        float: right;
+        margin-top: 32px;
+
+        li {
+          position: relative;
+          display: inline-block;
+          width: 285px;
+          margin-right: 16px;
+          img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 180px;
+          }
+          p {
+            a {
+              position: relative;
+              display: block;
+              width: 285px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 25px;
+              white-space: nowrap;
+              margin-top: 10px;
+            }
+          }
+        }
+        li:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
 
 //추천상품
 .purpose {
   position: relative;
   display: block;
   padding: 80px 0;
-  .inner{
-    >h2{
+  .inner {
+    > h2 {
       font-size: 32px;
       font-weight: 700;
       line-height: 40px;
     }
-    .purpose-wrap{
+    .purpose-wrap {
       margin-top: 40px;
       .good-wrap {
         position: relative;
@@ -1167,6 +1299,4 @@ body {
       }
     }
   }
-
 }
-

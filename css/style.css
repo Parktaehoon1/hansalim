@@ -755,6 +755,15 @@ body {
   display: block;
   height: 410px;
 }
+.visual .sw-visual .swiper-wrapper .swiper-slide > a {
+  position: relative;
+  display: block;
+}
+.visual .sw-visual .swiper-wrapper .swiper-slide > a img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 410px;
+}
 .visual .sw-visual .sw-visual-prev {
   position: absolute;
   left: calc(50% - 578px);
@@ -1095,6 +1104,116 @@ body {
   border: 0;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.new-product {
+  position: relative;
+  display: block;
+  padding: 80px 0;
+}
+.new-product .inner .new-product-title {
+  position: relative;
+  display: block;
+}
+.new-product .inner .new-product-title > h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.8px;
+}
+.new-product .inner .new-product-title > h2 > b {
+  position: relative;
+  display: block;
+  font-weight: 700;
+}
+.new-product .inner .new-product-title > a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 32px;
+  line-height: 30px;
+  width: 100px;
+  border: 1px solid #bbb;
+  text-align: center;
+  color: #bbb;
+  font-size: 13px;
+  padding: 0 12px;
+}
+.new-product .inner .new-product-desc {
+  position: relative;
+  display: block;
+  height: 504px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.new-product .inner .new-product-desc .new-product-desc-left {
+  position: relative;
+  float: left;
+  margin-top: 32px;
+}
+.new-product .inner .new-product-desc .new-product-desc-left > img {
+  position: relative;
+  display: block;
+  width: 592px;
+  height: 370px;
+}
+.new-product .inner .new-product-desc .new-product-desc-left .new-product-main-title > a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  letter-spacing: -0.025em;
+  font-size: 25px;
+  color: #000;
+  font-weight: 700;
+  line-height: 37px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.new-product .inner .new-product-desc .new-product-desc-left .new-product-sub-title > a {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: -0.025em;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.new-product .inner .new-product-desc > ul {
+  position: relative;
+  width: calc(100% - 610px);
+  float: right;
+  margin-top: 32px;
+}
+.new-product .inner .new-product-desc > ul li {
+  position: relative;
+  display: inline-block;
+  width: 285px;
+  margin-right: 16px;
+}
+.new-product .inner .new-product-desc > ul li img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+.new-product .inner .new-product-desc > ul li p a {
+  position: relative;
+  display: block;
+  width: 285px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.new-product .inner .new-product-desc > ul li:nth-child(2n) {
+  margin-right: 0;
 }
 
 .purpose {
